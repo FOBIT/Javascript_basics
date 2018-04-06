@@ -1,0 +1,100 @@
+<html>
+<head>   
+<title>User-defined objects</title>
+</head>
+
+<body>
+
+<script>
+						   var x = {};
+						   document.write(x);
+</script>
+<br>
+<br>
+
+<script>  
+						var x ={
+									name:"Muthu", 
+									mob:8689689, 
+									place: "velachery", 
+									age:30
+								}  
+						document.write(x);  
+</script>  
+
+<br>
+<br>
+<script>
+var mobile = new Object(); // Create the object
+mobile.name = "Nokia"; // Assign properties to the object
+mobile.color = "Red";
+document.write(mobile.name);
+</script>
+
+
+<br>
+<br>
+<script>
+					    var obj = new mob("5000", "200Kg");
+   						function mob(rate, weight){
+						this.mob_rate = rate;
+						this.mob_weight= weight;
+						}
+
+						document.write(obj.mob_rate);
+</script>
+<br>
+<br>
+
+
+
+<script >
+		function mob_details() 
+		{ 
+				document.write(this.mob_name+"<br>");
+				document.write(this.mob_rate+"<br>");
+				document.write(this.mob_version+"<br>");
+		}
+		function mobile(name, rate, version)
+		{ 
+				this.mob_name = name; 
+				this.mob_rate= rate;
+				this.mob_version  = version;
+				this.mob_details = mob_details;
+		} 
+				x = new mobile("Samsung", 5000, 5.6);
+				x.mob_details();
+				y = new mobile("Micromax", 5500, 7.5);
+				y.mob_details();
+</script>
+<br>
+<br>
+
+
+<script>
+         var obj = { 
+							x: 100, 
+							y: {a: 12}, 
+							z: function() 
+								  {  
+								   document.write("method of object");
+								  }
+					};
+						document.write(obj.x+"<br>"); 
+						document.write(obj.y+"<br>"); 
+						document.write(obj.y.a+"<br>"); 
+						obj.z(); 
+</script>
+
+<br>
+<br>
+
+</body>
+</html>
+
+
+
+
+
+
+

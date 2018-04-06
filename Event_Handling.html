@@ -1,0 +1,63 @@
+<html>
+<body onload="OnLoadDocument()">
+
+<p onclick="this.innerHTML='Thank you!!!'">Click me</p>
+<br>
+
+    <script>
+        function OnLoadDocument () {
+          document.body.style.backgroundColor = "pink";
+        }
+    </script>
+
+<br>
+<br>
+
+<select id="s1" onchange="myChange()">
+  <option value="Nokia">Nokia
+  <option value="Samsung">Samsung
+  <option value="Apple">Apple
+  <option value="Micromax">Micromax
+</select>
+
+<p id="demo">Guhan</p>
+
+<br>
+<br>
+
+<br>
+<br>
+Enter your name: <input type="text" id="i1" onkeyup="myOnkeyup()">
+
+<script>
+function myOnkeyup() {
+    var x = document.getElementById("i1");
+    x.value = x.value.toUpperCase();
+}
+</script>
+<br>
+<br>
+
+<input type="text" onkeydown="myOnkeydown()">
+<p id="v1" > </input>
+<script>
+function myOnkeydown() {
+   var x = document.getElementById("v1");
+   x.innerHTML= "please enter";
+}
+</script>
+<br>
+<br>
+
+
+<p><input type="text" onkeypress="myOnkeypress()"><p id="i3" > </p></p>
+
+<script>
+function myOnkeypress() {
+   var x = document.getElementById("i3");
+   x.innerHTML = "Thank you";
+}
+</script>
+
+</body>
+</html>

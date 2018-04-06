@@ -1,0 +1,45 @@
+<html>
+
+<head>
+<script>
+function validateForm() {
+     a = document.forms["form"]["name"].value;//getElementById(), //(0,0), (0,1), (0,2)...
+     b = document.forms["form"]["user"].value;
+     c = document.forms["form"]["mobile"].value;
+     d = document.forms["form"]["email"].value;
+     e = document.forms["form"]["addr"].value;
+    if (a == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+	if (b == "") {
+        alert("User must be filled out");
+        return false;
+    }
+	if (c == "") {
+        alert("Mobile must be filled out");
+        return false;
+    }
+	if (d == "") {
+        alert("Email must be filled out");
+        return false;
+    }
+	if (e == "") {
+        alert("Address must be filled out");
+        return false;
+    }
+}
+</script>
+</head>
+<body>
+<form name="form" onsubmit="return validateForm()" method="post">
+Name:  <input type="text" name="name"><br><br>
+User:  <input type="text" name="user"><br><br>
+Mobile:<input type="text" name="mobile"><br><br>
+Email: <input type="text" name="email"><br><br>
+Address:<textarea type="text" name="addr"></textarea><br><br>
+        <input type="submit" value="Submit"><br><br>
+</form>
+
+</body>
+</html>

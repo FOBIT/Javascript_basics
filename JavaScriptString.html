@@ -1,0 +1,189 @@
+<html>
+<style>
+
+h2{background-color:blue;color:white; width:150;}
+
+</style>
+
+<body>
+
+<h2>Introduction</h2>
+<script>
+/* String: Stores a series of characters.
+   1. string literal is created using double quotes. Ex: var x= "Guhan";
+   2. string object using the keyword 'new'. Ex: var mobile= new String("Samsung");
+*/
+</script>
+
+<br> <br>
+
+
+<br> <br><br> <br>
+
+<script>
+var x = new String();
+x.name="Guhan";
+x.mobile=9798176;
+x.age=25;
+document.write(x.name+"<br>"+x.mobile+"<br>"+x.age);
+</script>
+
+<br>
+<br>
+<h2> charAt</h2>
+<script>
+var x = "Guhan";
+var y = x.charAt(1);
+   // length, fontcolor("red"), fontsize("30"),  
+document.write(y+ "<br>");
+document.write(z);
+</script>
+
+<h2> Change Case</h2>
+<script>
+var x = "Guhan";
+var y = "Anbu";
+var z= x.concat(y);
+var l = x.toLowerCase();
+var u = x.toUpperCase();
+document.write(l+"<br>");
+document.write(u+"<br>");
+document.write(z);
+
+/*
+var a=8;
+var b=5;
+var c=a.concat(b);
+document.write(c); ?????? */
+</script>
+
+<h2>Index </h2>
+<script>
+var x = "He is my dear Friend";
+var y= x.lastIndexOf("He"); //0 
+var z= x.lastIndexOf("is"); // 3
+document.write(y+ "<br>");
+document.write(z);
+</script>
+
+
+<h2> Match</h2>
+
+
+<script>
+var x = "He is my dear Frend";
+var y= x.match("dear"); 
+document.write(y);
+</script>
+
+
+
+<h2> Replace</h2>
+<script>
+var x = "He is my dear Friend  Rohit ";
+var y= x.replace("Rohit", "Ranjith");
+document.write(y);
+
+var a= "Guhan";
+var b= a.replace("han", "ru");   // Guru
+document.write(b);
+</script>
+
+
+<h2> Link</h2>
+
+<script>
+var x ="Facebook";
+var y ="https://payilagam.com/";
+var z= x.link(y);
+document.write(z);
+</script>
+
+
+<h2> Slice</h2>
+<script>
+var x ="JavaScript";   
+var y= x.slice(2,6);   // vaSc, not in -ve value
+document.write(y);
+</script>
+
+<h2> Split</h2>
+<script>
+var x ="Java script how are you";
+var y= x.split(" ", 2);  // without space, J,a and with space Java, script
+document.write(y); 
+</script>
+
+<h2>Search </h2>
+
+      <script>
+          //Optional
+         var y = "He is my dear Friend";
+		 var x = /Friend/gi;
+		 
+         var z = y.search(x);
+         if (  z == true ){
+               document.write("No" );
+            }
+            
+            else
+			
+            {
+               document.write("Yes" );
+            }
+      </script>
+
+	  
+	<h2> Substring  </h2>  
+
+      <script>
+         var str = "Payilagam";
+         
+         document.write(str.substr(2,5));
+      </script>	
+	  
+	  
+<h2> Compare </h2>
+
+<script>
+         var x = new String( "Payilagam at velachery" );
+         var y = x.localeCompare( "chennai" );
+                 document.write(y+"<br>"); 
+         var z= x.localeCompare( "velachery" );
+         document.write(z); 
+      </script>
+	  
+	  
+<h2>  Repeat</h2>	  
+<script>
+
+    var x = "Google";
+        y = x.repeat(2);
+		document.write(y);
+
+</script>	  
+	  
+	  <h2> Trim</h2>	  
+<script>
+
+        var x = "     Google      yahooo      ";
+        y = x.trim();
+		document.write(y);
+
+</script>	
+	  
+	  
+<h2> Reverse a String</h2>
+<script>
+var x = "Naveen";
+var y=x.length;
+
+for(i=y-1; i>-1; i--)
+{
+document.write(x.charAt(i));
+}
+</script>
+
+</body>
+
+</html>

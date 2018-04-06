@@ -1,0 +1,30 @@
+<html>
+<body>
+Name: <input></input><br><br>
+Father Name:<input></input><br><br>
+Mother Name: <input></input><br><br>
+Moble <input></input><br><br>
+      <input type="submit" value="Submit" onclick="validateForm()">
+<script>
+function validateForm() {
+   x = document.getElementsByTagName("input");
+    if (x[0].value =="") {
+        alert("Name must be filled out");
+        return;
+    }
+	if (x[1].value=="") {
+        alert("Father name must be filled out");
+        return;
+    }
+	if (x[2].value=="") {
+        alert("Mother name must be filled out");
+        return;
+    }
+	if (x[3].value=="") {
+        alert("Moble number must be filled out");
+        return;
+    }
+}
+</script>
+</body>
+</html>

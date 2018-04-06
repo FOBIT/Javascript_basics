@@ -1,0 +1,55 @@
+<html >
+
+<body onload="onload()" id="b1">
+<p id="p1">   </p>
+
+
+<button onclick="onClick()">onclick </button>
+<br><br>
+<button ondblclick="onDouble()">double </button>
+
+
+
+<script>
+         
+		 function onClick()
+		 {
+		      document.getElementById("p1").innerHTML="onClick_Element";
+			 
+		 }
+		 function onDouble()
+		 {
+		      document.getElementById("p1").innerHTML="on_double_click_Element";
+			 
+		 }
+          function onload()
+		  {
+		      document.getElementById("b1").style.backgroundColor="pink";
+		  }
+
+
+</script>
+
+<span>text </span>
+
+<script>
+const span = document.querySelector("span");
+
+span.onclick = function() {
+  document.execCommand("copy");
+}
+
+span.addEventListener("copy", function(event) {
+  event.preventDefault();
+  if (event.clipboardData) {
+    event.clipboardData.setData("text/plain", span.textContent);
+    console.log(event.clipboardData.getData("text"))
+  }
+});
+
+
+</script>
+
+</body>
+
+</html>

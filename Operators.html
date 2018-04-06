@@ -1,0 +1,317 @@
+<html>
+<head>
+<!--JavaScript provides 3 places to put the JavaScript code: 
+1.Within body tag, 
+2.Within head tag 
+3.External JavaScript file(.js file).-->
+</head>
+
+<style>
+
+h2{border:2px solid red; width:200; height:40; 
+background-color:green;text-align:center;color:white;border-radius:5px;margin-left:100px;}
+h3{color:red;}
+</style>
+
+<body>
+<!-- 	 
+	 JavaScript ("JS" for short) is a full-fledged dynamic programming language that, 
+	 when applied to an HTML document, can provide dynamic interactivity on websites.
+	 
+	 It was invented by Brendan Eich, co-founder of the Mozilla project, the Mozilla Foundation, 
+	 and the Mozilla Corporation.
+	 -->
+
+	 
+<!--
+      Data Types:
+	  
+     		  A) Primitive data types
+			       1. String- Represents sequence of characters e.g. "Payilagam".
+				   2. Number- Represents numeric values e.g. 1234.
+				   3. Boolean- Represents boolean value either false or true.
+				   4. Undefined- Represents undefined value.
+				   5. Null- Represents null i.e. no value at all.
+			  
+			  B) Non-primitive data types
+			       1. Object- Represents instance through which we can access members.
+				   2. Array- Represents group of similar values.
+				   3. RegExp- Represents regular expression.
+				   
+	  
+     1) Byte data type is an 8-bit signed two's complement integer (Ex. byte a = 23, byte b = -54).
+
+     2) Short data type is a 16-bit signed two's complement integer( Ex. short s = 10000, short r = -20000 ).
+	 
+	 3) Int data type is a 32-bit signed two's complement integer. ( Ex. int a = 100000, int b = -200000)
+	 
+	 4) Long data type is a 64-bit signed two's complement integer. (Ex. long a = 100000L, long b = -200000L)
+	 
+	 5) Float( 32 bit data type, Ex. float x = 45.6f )
+	 
+	 6) double data type is a double-precision 64-bit IEEE 754 floating point( Ex. double d1 = 123.4)
+	 
+	 7) boolean data type represents one bit of information ( Ex. boolean one = true)
+	 
+	 8) char data type is a single 16-bit Unicode character (Ex. char letterA = 'A')
+	 
+<script src="">
+      /* Rules are declaring variables:
+	  1. Name must start with a letter (a to z or A to Z), underscore( _ ), or dollar( $ ) sign.
+	  2. After first letter we can use digits (0 to 9), for ex. x113.
+	  3.JavaScript variables are case sensitive, for example x and X 
+	  are different variables.
+	  */
+	  
+	  
+      var x1="guhan"; //A JavaScript variable is simply a name of storage location.
+	  document.write(x1);//to display dynamic content.
+</script>
+            
+							<h2>  Operators</h2>
+
+
+
+<h3> Concatenation </h3>
+<script>
+      var x="I&nbsp;";
+	  var y="love<br>";
+	  var z="India";
+	  var a = x+y+z;
+	  document.write(a);
+</script>
+
+<h3> Addition and Subtraction </h3>  <!-- Arithmetic Operators-->
+<script>
+      var x=10;
+	  var y= 15;
+	  x-=5; // x+=30; assignment operator e.g x-=20, x*=20; x/=10; x%=4; {x=x-5; or x-=5;}
+	  document.write(x+ "<br>");
+	  document.write(z);
+</script>
+
+
+<h3> Multiplication and Division </h3>
+<script>
+      var x=12;
+	  var y=5;
+	  var z=x*y;
+	  var a =x/y;
+	  var b=x%y;
+	  document.write(z+ "<br>");
+	  document.write(a+ "<br>");
+	  document.write(b);
+</script>
+
+<h3> Incrementing or Decrementing  </h3>
+
+<script>
+var x= 5;
+var y= 10;
+++x;
+x++;
+--y;
+y--;
+
+
+
+document.write(x+ "<br>");
+document.write(y+ "<br>");
+
+a=2;
+
+i=++a;
+
+m=a++;
+
+document.write(i+"<br>");
+document.write(m+"<br>");
+
+</script>
+
+
+<h3> Addition Vs Concatenation</h3>
+
+<script>
+   var x = 10;
+   var y = "10";
+   var z= x+y;
+   document.write(z);
+</script>
+
+
+<h3> Forcing a String to act as a number</h3>
+
+<script>
+   var x = 10;
+   var y = "10";
+   var z =Number(y);
+   var a=x+z;
+   document.write(a);
+</script>
+
+<h3> Forcing a String to act as a number(using unary plus operator)</h3>
+
+<script>
+   var x = 10;
+   var y = "20";
+   
+   document.write(x+ +y);  //+y  will change a string to number using the + sign
+</script>
+
+
+<h3> Comparison Operators usnig conditional code</h3>
+
+<script>
+   var x = 10;
+   var y = 10;
+   var z= 5;
+   if(x==y)
+   document.write("True");
+   else
+   document.write("False");
+   if(x>z)
+   document.write("True"); 
+   else
+   document.write("False");
+   if(x<z)
+   document.write("True"); 
+   else
+   document.write("False");
+</script>
+
+<h2> Bitwise Operators  </h2>
+
+<script>
+var x = 10;
+var y= 20;
+var z= 30;
+if(x==y & x==z)//&& logical AND must both are true or false
+document.write("True<br>");
+else
+document.write("Wrong<br>");
+if(x!=y | x==z)// || logical OR, != logical NOT
+document.write("True<br>");
+else
+document.write("Wrong<br>");
+if(x!=y | x==z)
+document.write("True<br>");
+else
+document.write("Wrong<br>");
+</script>
+
+
+<h2> Ternary Operator</h2>
+<!--The ternary operator is an operator that takes three arguments. 
+The first argument is a comparison argument, the second is the result 
+upon a true comparison,and the third is the result upon a false comparison.-->
+<script>
+var x = 100;
+var y =((x < 17) ? document.write("True<br>") : document.write("false<br>") );
+
+</script>
+   <h2>  For Loop </h2>
+   <style>
+    table,td{
+	border:1px solid blue; border-collapse:collapse;
+	}
+   
+   </style>
+<script>
+for(i=1; i<=6; i++)
+{
+document.write("*");
+}
+
+
+document.write("<table><tr>");
+for(i=0;i<5;i++)
+{
+   document.write("<td>"+i+"</td>");
+}
+document.write("</tr></table>");
+
+
+
+document.write("<table>");
+for(i=0;i<5;i++)
+{   document.write("<tr>");
+    for(j=0;j<5;j++)
+	{
+    document.write("<td>"+j+"</td>");
+	}
+	document.write("</tr>");
+}
+document.write("</table>");
+</script>
+<br>
+
+         <h2>  Switch Case: </h2>
+<script>
+s=100;
+if(s==100)
+{
+  document.write("s has a vlues is:10<br>");
+}
+
+
+if(s==100)    // else if 
+{
+  document.write("s has a vlues is:100<br>");
+}
+else
+{
+  document.write("Wrong<br>");
+}
+
+
+
+var x=50;
+switch(x)
+{
+  case 50: 
+  {
+  document.write("40");
+  break;
+  }
+  
+  case 50: 
+  {
+  document.write("45");
+  break;
+  }
+  default:
+  {
+  document.write(x);
+  break;
+  }
+  
+}
+
+</script>
+<h2> While</h2>
+
+<script>
+var i=1;
+while(i<5)
+{
+
+  document.write(i);
+    i++;
+}
+</script>
+<br><br>
+<script>
+var i=0;
+do
+{   
+         i++;
+         document.write(i);
+  
+}
+while(i<5)
+</script>
+
+
+</body>
+</html> 

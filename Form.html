@@ -1,0 +1,107 @@
+<html>
+<style>
+input{background-color:#EAFAF1;color:blue;}
+p{color:red;}
+table{
+border: 0px solid blue;border-collapse:collapse;
+}
+td{border:0px solid blue; width:170;height:50;text-align:center;background-color:#cbb9b1;color:white;}
+#td1{border:0px solid blue; width:160;height:50;text-align:center;background-color:white;}
+</style>
+<body>
+
+<table>
+      <tr> <td>Name: </td><td><input id="i1" type="text" onmouseover="onMouseover()" 
+	  onmouseout="onMouseout()" /> </td><td id="td1"><p id="p1"> </p> </td></tr>
+	  <tr> <td>Father: </td><td> <input id="i2" type="text" onmouseover="onMouseover1()" onmouseout="onMouseout1()" /></td><td id="td1"><p id="p2"> </p> </td></tr>
+	  <tr> <td>Mother: </td><td><input id="i3" type="text" onmouseover="onMouseover2()" onmouseout="onMouseout2()" /> </td><td id="td1"><p id="p3"> </p> </td></tr>
+	  <tr> <td>Mobile: </td><td><input id="i4" type="text" onmouseover="onMouseover3()" onmouseout="onMouseout3()" /> </td><td id="td1"><p id="p4"> </p> </td></tr>
+	  <tr> <td> Email:</td><td> <input id="i5" type="text" onmouseover="onMouseover4()" onmouseout="onMouseout4()" /></td><td id="td1"><p id="p5"> </p> </td></tr>
+</table>
+
+<script>
+function onMouseover() {  
+     if(document.getElementById("i1").value==""){
+    document.getElementById("p1").style.background= "#DEE0FE";
+	document.getElementById("p1").style.border= "1px solid green";
+	document.getElementById("p1").style.width= "150";
+	document.getElementById("p1").style.height= "40";
+	document.getElementById("p1").innerHTML="Plase Enter your name!!";
+	}}
+
+function onMouseout() {
+    document.getElementById("p1").style.background= "";
+	document.getElementById("p1").style.border= "";
+	document.getElementById("p1").style.width= "";
+	document.getElementById("p1").style.height= "";
+	document.getElementById("p1").innerHTML="";
+}
+
+function onMouseover1() {  
+     if(document.getElementById("i2").value==""){
+    document.getElementById("p2").style.background= "#DEE0FE";
+	document.getElementById("p2").style.border= "1px";
+	document.getElementById("p2").style.width= "150";
+	document.getElementById("p2").style.height= "40";
+	document.getElementById("p2").innerHTML="Plase Enter father name!!";
+	}}
+
+function onMouseout1() {
+    document.getElementById("p2").style.background= "";
+	document.getElementById("p2").style.border= "";
+	document.getElementById("p2").style.width= "";
+	document.getElementById("p2").style.height= "";
+	document.getElementById("p2").innerHTML="";
+}
+
+function onMouseover2() {  
+     if(document.getElementById("i3").value==""){
+    document.getElementById("p3").style.background= "#DEE0FE";
+	document.getElementById("p3").style.border= "1px";
+	document.getElementById("p3").style.width= "150";
+	document.getElementById("p3").style.height= "40";
+	document.getElementById("p3").innerHTML="Plase Enter mother name!!";
+	}}
+
+function onMouseout2() {
+    document.getElementById("p3").style.background= "";
+	document.getElementById("p3").style.border= "";
+	document.getElementById("p3").style.width= "";
+	document.getElementById("p3").style.height= "";
+	document.getElementById("p3").innerHTML="";
+}
+function onMouseover3() {  
+     if(document.getElementById("i4").value==""){
+    document.getElementById("p4").style.background= "#DEE0FE";
+	document.getElementById("p4").style.border= "1px";
+	document.getElementById("p4").style.width= "150";
+	document.getElementById("p4").style.height= "40";
+	document.getElementById("p4").innerHTML="Plase Enter mobile number!!";
+	}}
+
+function onMouseout3() {
+    document.getElementById("p4").style.background= "";
+	document.getElementById("p4").style.border= "";
+	document.getElementById("p4").style.width= "";
+	document.getElementById("p4").style.height= "";
+	document.getElementById("p4").innerHTML="";
+}
+function onMouseover4() {  
+     if(document.getElementById("i5").value==""){
+    document.getElementById("p5").style.background= "#DEE0FE";
+	document.getElementById("p5").style.border= "1px";
+	document.getElementById("p5").style.width= "150";
+	document.getElementById("p5").style.height= "40";
+	document.getElementById("p5").innerHTML="Plase Enter your email!!";
+	}}
+
+function onMouseout4() {
+    document.getElementById("p5").style.background= "";
+	document.getElementById("p5").style.border= "";
+	document.getElementById("p5").style.width= "";
+	document.getElementById("p5").style.height= "";
+	document.getElementById("p5").innerHTML="";
+}
+</script>
+</body>
+</html>

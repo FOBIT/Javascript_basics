@@ -1,0 +1,61 @@
+<html>
+       <script>
+	               x=10;
+	               function myFunction()
+				   {
+				       console.log(x);
+				   }
+				   myFunction();
+				   
+				   function myFunction1()
+				   {
+				     console.log(x);
+				   }
+				   obj = new myFunction1();
+				   function myFunction2(m,n)
+				   {
+				     z=m+n;
+				     console.log(z);
+				   }
+				   obj = new myFunction2(12,23);
+				   function myFunction3()
+				   {   d=100;
+				       this.z=function run()
+					   {   
+                           return d;					   
+					   }
+				   
+				   }
+				   obj = new myFunction3();
+				   console.log(obj.z());
+				   console.log(d);	
+				   
+				   
+				   t = function go()
+				        {
+						   r=10;
+						   return r;
+						}
+				   
+				   g = t();
+				   console.log(g);
+				   
+				   function myFunction4(k)
+				   { 
+				       console.log(k)
+				   
+				   }
+				   obj = new myFunction4(g);
+				   
+</script>
+<p id="p1"> </p>
+
+<script>
+         function myClock()
+		 {  d = new Date();
+		    document.getElementById("p1").innerHTML=d.toLocaleTimeString();
+		 }
+		 setInterval(myClock,1000)
+</script>
+
+</html>

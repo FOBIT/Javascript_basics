@@ -1,0 +1,62 @@
+<html>
+<style>  
+li{float:left;display:block;}
+</style>
+<body>
+
+<ul>
+  <li id="l1"> </li>
+  <li id="l2"> </li>
+  <li id="l3"> </li>
+  
+</ul>
+
+<script>
+
+    x = new Date();
+    a = x.getDate();
+	b = x.getFullYear();
+	document.getElementById("l1").innerHTML = a+"&nbsp;";
+	document.getElementById("l3").innerHTML = b+"&nbsp;";
+	
+</script>
+
+<script>
+         x = [ "January", "February", "March", "April", "May", "June", "July","August"];
+		 y = new Date().getMonth();
+		var  z;
+		  switch(y)
+		{
+		 case 0:
+		 z= x[0];
+		 break;
+		case 1:
+		 z= x[1];
+		 break;
+		case 2:
+		 z= x[2];
+		 break;
+		case 3:
+		 z= x[3];
+		 break;
+		case 4:
+		 z= x[4]; 
+		 break;
+		case 5:
+		 z= x[5];
+		 break;
+		case 6:
+		 z= x[6];
+		 break;
+		 case 7:
+		 z= x[7];
+		 break;
+		 case 8:
+		 z= x[8];
+		 break;
+		}	
+	     document.getElementById("l2").innerHTML = z+"&nbsp;";
+</script>
+
+</body>
+</html>

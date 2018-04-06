@@ -1,0 +1,23 @@
+<html>
+<body>
+<input type="text" id="demo1"/>
+<input type='submit' name="submit" onclick="checkNumber();"/>
+
+<script>
+
+function checkNumber() {
+    var x = document.getElementById("demo1");
+	var y= x.value;
+    var z = /^[0-9]+$/;
+    if (!z.test(y)) {
+    alert("Use only numeric");
+    return false;
+ }
+}
+</script>
+
+<br>
+<br>
+
+</body>
+</html>

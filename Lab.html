@@ -1,0 +1,33 @@
+<html>
+<body>
+<form onsubmit="return checkAll()">
+		Name<input type="text" id="demo1"/><br><br>
+		Mob:<input type="text" id="demo2"/><br><br>
+		<input type='submit' name="submit"/>
+</form>
+<script>
+function checkAll() 
+{		var x = document.getElementById("demo1");
+		var filter = /^[A-Za-z]+$/;
+		var y =x.value;
+		if (!filter.test(y)) 
+		{
+			alert('Please check your Alphabet');
+			return false;
+		}
+		var num = document.getElementById("demo2");
+		var y= num.value;
+		var filter = /^\d{10}$/;
+		if (!filter.test(y)) 
+		{
+		alert("Please check your 10 Digit number");
+		return false;
+		}
+}
+</script>
+
+<br>
+<br>
+
+</body>
+</html>

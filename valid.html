@@ -1,0 +1,26 @@
+<form name="myform" >
+    Name:  <input id="i1" name="name"/><br><br>
+    Mobile:  <input id="i2" name="mobile"/><br><br>
+      <input type="button" value="click"  onclick="return myFunction()"/>
+</form>
+
+<script>
+        function myFunction()
+		{
+        x = document.forms["myform"]["name"].value;
+        y = document.forms["myform"]["mobile"].value;
+		
+		if(x=="")
+		{
+		  alert("Check Name");
+		  return false;
+		  
+		}
+
+        if(y=="")
+		{
+		  alert("check mobile");
+		  return false;
+		}
+		}
+</script>

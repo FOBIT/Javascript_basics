@@ -1,0 +1,25 @@
+<html>
+<body>
+
+<button onclick="myFunction()">submit</button>
+<p id="demo1"></p>
+<p> -</p>
+
+
+
+
+<script>
+function myFunction() {
+    var x;
+	
+	y=confirm("Press a button!");
+    if ( y== true) {
+        x = "You pressed OK!";
+    } else {
+        x = "You pressed Cancel!";
+    }
+    document.getElementById("demo1").innerHTML = x;
+}
+</script>
+</body>
+</html>

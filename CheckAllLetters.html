@@ -1,0 +1,17 @@
+<html>
+<body>
+<input type="text" id="demo1"/>
+<input type='submit' name="submit" onclick="checkAlpha();"/>
+<script>
+function checkAlpha() 
+{
+    var x = document.getElementById("demo1").value;
+    var y = /^[A-Za-z]+$/;
+    if (!y.test(x)) {
+    alert('Please check your Alphabet');
+    return false;
+    }
+}
+</script>
+</body>
+</html>

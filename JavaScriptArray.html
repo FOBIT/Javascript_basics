@@ -1,0 +1,172 @@
+	<html>
+	<style>
+	 h2{border: 1px solid red; width:150; background-color:blue; color:white;}
+	</style>
+	<body>
+	<!-- Array- store multiple values in a single variable. -->
+	<h2> Creating an array object</h2>
+	<script>
+				 var x = new Array(23,78,45);
+				 document.write(x[0]);//23
+				 
+	</script>
+
+	<h2>Printing the array value</h2>
+	<script>
+				 var x =[6,7,6,8,4,5,3];     
+				 document.write(x+"<br>");//6,7,6,8,4,5,3 
+				 document.write(x[2]+"<br>");//6
+				 document.write(x.indexOf(7)+"<br>");//index=1
+	</script>
+	<br>
+	<h2>Printing the array value1</h2>
+	<script>
+				var emp = {name:"arun", age:27, mob:"75875"} //array object
+				document.write(emp.mob);
+
+	</script>
+	
+	<script>
+				var x = [];          // Associative Array
+				x["name"] = "arun";   // or we can define emp[0]="Guhan";
+				x["age"] = 27;
+				x["mob"] = "8790709";
+				var a = x.length;   // it will return a 0 value      
+				var b = x["name"];  // we can not define var y= emp[3] like that..
+				document.write(a+"<br>");
+				document.write(b);  
+	</script>
+
+	<h2>Array length</h2>
+	<script>
+				 var x =[676, 876, 53, 980];
+				 var y = ["ravi", "anbu", "kathir", "barathi"];
+				 var m= x.length;//4
+				 document.write(m+"<br>");
+				 var n =y.sort();//anbu,barathi,kathir,ravi
+				 document.write(n);
+	</script>
+
+     <h2> Array concatenation</h2>
+
+	<script>
+		 var x =["siva", "anbu", "ghuru"]; 
+		 var y= [ "ram", "Karthi", "ravi"]
+		 var z= y.concat(x); //this array joined with another array value(s). ram, karthi, ravi, siva,anbu ..
+		 document.write("<br>"+z);
+		 
+	</script>
+
+	<br>
+	<br>
+	<h2> Array concatenation1</h2>
+
+	<script>
+		 var x =["siva", "anbu", "raghu"];
+		 var y= [ "ram", "Karthi", "ravi"]
+		 var z= y[0].concat(x[2]);//ramraghu
+		 document.write("<br>"+z);
+
+	</script>
+
+	<h2>Array Join</h2>
+	<script>
+		 var x =["siva","kumar","sundar"]; 
+		 var z= x.join(); // joins all elements and gives results as a string element ///siva,kumar,sundar
+		 document.write("<br>"+z);
+		 var x =["siva","kumar","sundar"]; 
+		 var z= x.join("$$"); // joins all elements and gives results as a string element //siva$$kumar$$sundar 
+		 document.write("<br>"+z);
+		 
+	</script>
+	<br>
+
+	<h2> Array Push</h2>
+	<script>
+	var x =[3, 5, 6, 7]; //adds a new element to an array (at the end):
+	var y= [8,9];        // 3,5,6,7,8,9
+	var z= x.push(y); // x.push(10);  
+	
+	
+	document.write(x+"<br>");
+	
+	</script>
+
+	<h2> Array Pop</h2>
+	<script>
+	var x =[3, 5, 6, 7]; //Removes the last element
+
+	var z= x.pop();//7
+    var n = x.pop();//6
+
+	document.write(z+"<br>"); 
+	document.write(n);
+	</script>
+
+	<h2> Array shift</h2>
+	<script>
+	var x =[19, 50, 76, 78]; //Removes the first element
+
+	var z= x.shift(); //19
+	document.write(z);
+	</script>
+
+ <h2> Array Unshift</h2>
+	<script>
+		var a = [4, 5, 6];    //add to the beginning of an array.
+		a.unshift(1, 2, 3);
+		document.write(a); // [1, 2, 3, 4, 5, 6]
+	</script>
+
+	<h2> Array reverse</h2>
+	<script>
+			 var x = [0, 1, 2, 3];
+			 var y=x.reverse();
+			 document.write(y);   //.shift(); .sort();
+	</script>
+
+			  <h2> Array slice</h2>
+	<script>
+			 var x = ["anbu", "maha", "barath", "neelan", "tera"];
+			 var y= x.slice(1,3);  //maha, barath
+			 document.write(y);
+	</script>
+
+			  <h2> Array splice</h2>
+	<script>
+			 var x = ["anbu", "maha", "barath", "neelan", "tera"];
+			 var y= x.splice(1,3);  // maha, barath, neelan
+			 document.write(y); //x-> anbu, tera, y-> maha, barath, neelan
+	</script>
+	<br>
+	<h2> Removed</h2>
+	<script>
+				x = ["a","b","c","k","d","e"];
+				s = 3;
+				r = 2;
+				removed = x.splice(s,r,"x","y");
+				document.write(removed);
+				//k,d
+				document.write("<br>");
+				document.write(x);//a,b,c,x,y,e
+			</script>
+	
+	<h2>printing the array element using for loop</h2>
+
+	<script>
+			 var x =[1, 2, 3, 4, 5];
+			 
+			 var a = x.reverse();
+			 
+			 var y=a.length;
+			 
+				for (i=0; i<y; i++)
+				{ 
+				  
+				   document.write("<br>"+x[i]);
+				}
+	</script>
+
+	  
+	</body>
+	</html>

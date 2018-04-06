@@ -1,0 +1,22 @@
+<html>
+<body>
+<button onclick="myFunction()">click here</button>
+<a href="https://www.facebook.com/"  id="a1"> </a>
+<a   href="https://twitter.com/login" id="a2">   </a>
+<script>
+function myFunction() {
+    
+    var r = confirm("only authorized person");
+    if (r == true) {
+        document.getElementById("a1").innerHTML="Facebook";
+    } else {
+        document.getElementById("a2").innerHTML="Twitter";
+    }
+    
+}
+</script>
+
+
+</body>
+
+</html>

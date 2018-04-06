@@ -1,0 +1,71 @@
+<html>
+<style>
+table{border-collapse:collapse;}
+td{border:1px solid white; width:40;height:8;background-color:gray;}
+</style>
+<body>
+<input type="text" id="demo1"/>
+<br><br>
+<table>
+<tr>
+<td id="demo2"></td>
+
+<td id="demo3"></td><td id="demo4"></td><td id="demo5"></td
+<tr>
+</table>
+<br>
+<p id="p1"> <p>
+
+check password strength:<input type="checkbox" name="" onclick="checkNumber();"/>
+<script>
+
+function checkNumber() {
+
+    var num = document.getElementById("demo1");
+	var y= num.value;
+   	var z=y.length;
+	if (z=="") {
+    document.getElementById("demo2").style.background="red";
+	document.getElementById("p1").innerHTML="Please Enter the Password";
+	document.getElementById("p1").style.color="red";
+    return false;
+    }
+	if (z<4) {
+    document.getElementById("demo2").style.background="red";
+	document.getElementById("p1").innerHTML="Password is week";
+	document.getElementById("p1").style.color="red";
+    return false;
+    }
+    if (z==5) {
+	document.getElementById("demo2").style.background="red";
+    document.getElementById("demo3").style.background="pink";
+	document.getElementById("p1").innerHTML="Password is medium";
+	document.getElementById("p1").style.color="pink";
+    return false;
+    }
+	if (z==7) {
+	document.getElementById("demo2").style.background="red";
+    document.getElementById("demo3").style.background="pink";
+    document.getElementById("demo4").style.background="orange";
+	document.getElementById("p1").innerHTML="Password is normal";
+	document.getElementById("p1").style.color="orange";
+    return false;
+    }
+     if (z>8) {
+	document.getElementById("demo2").style.background="red";
+    document.getElementById("demo3").style.background="pink";
+    document.getElementById("demo4").style.background="orange";
+    document.getElementById("demo5").style.background="green";
+	document.getElementById("p1").innerHTML="Password is strong";
+	document.getElementById("p1").style.color="green";
+    return false;
+    }
+     
+}
+</script>
+
+<br>
+<br>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<html>
+<body>
+
+<h2> Type:Radio </h2>
+<input type="radio" id="r1">
+<button onclick="myFunction()">remove</button>
+
+<script>
+function myFunction() {
+    x = document.getElementById("r1");
+    x.checked = false;
+}
+</script>
+
+<h2> Reset </h2>
+<input type="text">
+<input type="radio"> </input>
+<button onclick="myFunction()">reset</button>
+
+<script>
+function myFunction() {
+    x = document.getElementsByTagName("input");
+    x[0].value="";
+	x[1].value="";
+	x[2].value="";
+}
+</script>
+
+
+
+<h2>Open New Window </h2>
+<button onclick="openWindow()">click</button>
+<script>
+        function openWindow(){
+		        x = window.open();
+				x.document.open();
+				
+				//x.document.write("<p>This is a new window </p>");
+		}
+</script>
+
+
+
+<h2> Add or Remove Items from dropdown list</h2>
+<form>
+      <select id="selected">
+	  <option> A </option>
+	  <option> B  </option>
+	  <option> C  </option>
+	  </select>
+</form>
+
+<button onclick="getData()" > count</button>
+<button onclick="removeData()" > remove</button>
+
+
+<script>
+         function getData(){
+		                      x = document.getElementById("selected");
+							  list = "Number";
+							  l=document.getElementById("selected").length;
+							  list=list+l;
+							  for( i=0; i<x.length; i++)
+							  {
+							     list=list+"<br>"+x.options[i].text;							     
+							  }
+							  alert(list);
+		 }
+		 function remove(){
+							  y = document.getElementById("selected");
+							  alert("Selected value");
+							  y.remove(y.selectedIndex);
+		 }
+</script>
+
+
+
+</body>
+</html>

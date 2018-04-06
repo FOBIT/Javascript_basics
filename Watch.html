@@ -1,0 +1,27 @@
+<html>
+<body>
+
+
+<button onclick="clearInterval(z)">stop</button>
+<button onclick="mySet()">start</button>
+<p id="p2"></p>
+<script>
+z = setInterval(myTimer, 1000);
+function myTimer()
+{
+  a = new Date();
+  document.getElementById("p2").innerHTML=a.toLocaleTimeString();
+}
+function mySet(){
+z = setInterval(myTimer, 1000);
+function myTimer()
+{
+  a = new Date();
+  document.getElementById("p2").innerHTML=a.toLocaleTimeString();
+}
+}
+</script>
+
+
+</body>
+</html>

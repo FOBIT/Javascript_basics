@@ -1,0 +1,26 @@
+<html>
+<body>
+<input type="text" id="demo1"/>
+<input type='submit' name="submit" onclick="checkNumber();"/>
+
+<script>
+
+function checkNumber() 
+{
+    var x = document.getElementById("demo1").value;
+	
+    var  y = /^[a-z]+$/;// /^d{10}$/; /^[0-9]+$/;   /^[a-z]+$/     
+	// /^([a-zA-Z0-9_\.])+\@(([a-zA-Z]))+\.(([a-z]))+$/;
+    if (!y.test(x)) {
+    alert("Please check your 10 Digit number");
+    return false;
+	
+ }
+}
+</script>
+
+<br>
+<br>
+
+</body>
+</html>

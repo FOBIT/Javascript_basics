@@ -1,0 +1,65 @@
+Declaring variable:
+1)
+let x: number = 10;
+let y: string = "Guhan";
+let z: number = 20;
+console.log(y + "has" + x + "and" + z);
+--------------------------------------------------
+2)
+function f1() { 
+    var x = 10;
+    var y = 20;
+    return x + y;
+
+}
+
+var m = f1();
+
+alert(m);
+--------------------------------------------------
+3)
+function f() {
+    var a = 1;
+    var b = g();
+    return b;
+
+    function g() {
+        return a;
+    }
+}
+
+var m = f();
+alert(m);
+-------------------------------------------------
+4) Variable Capturing Quirks
+   
+for (var i = 0; i < 3; i++) { 
+    setTimeout(
+        function run() {
+            //console.log(i);
+            alert(i);
+         }, 100*i);
+}
+
+------------------------------------------------
+5) 
+
+for (var i = 0; i < 3; i++) { 
+    
+       ( function(i) {
+            
+           console.log(i);
+    }
+    (i)   );
+}
+
+
+
+
+
+
+
+
+
+
+

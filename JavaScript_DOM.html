@@ -1,0 +1,124 @@
+<html>
+<style>
+p{
+color:blue;
+margin-left:150px;
+}
+h2{
+color:red;
+margin-left:100px;
+}
+</style>
+<body>
+
+ <!-- DOM allows programs and scripts to dynamically access and update
+ the content, structure, and style of a document."-->
+<h2>  1. Finding HTML Elemnt by ID</h2>
+
+<p id="a1">Welcome to Payilagam...</p>
+
+<h1 id="a2">   </h1>
+
+<script>
+var x = document.getElementById("a1");
+//document.write(x);
+var y = document.getElementById("a1").innerHTML;
+//document.write(y); 
+document.getElementById("a2").innerHTML= y;
+
+</script>
+
+<br>
+
+<h2> 2. Finding HTML Elements by Tag Name </h2>
+
+<p>Guhan</p>
+
+<p>Muthu</p>
+<p>Raghavan</p>
+
+<p id="T1"></p>
+
+<script>
+var x = document.getElementsByTagName("p");
+document.getElementById("T1").innerHTML=x[4].innerHTML;
+</script>
+
+<h2> 3. ID and Tag Name:</h2>
+
+<marquee id="demo3a">  <b>India  </b> <b> Sri Lanka </b> </marquee>
+<p id="demo3b" > </p>
+
+<script>
+var x = document.getElementById("demo3a");
+var y = x.getElementsByTagName("b");
+document.getElementById("demo3b").innerHTML ="  " + y[1].innerHTML;
+</script>
+
+<h2> 4. Finding HTML Elements by Class Name  </h2>
+
+<div  class="c1"> Tamilnadu </div>
+<div class="c1"> Kerala</div>
+<p id="c2"> </p>
+
+<script>
+     var x=document.getElementsByClassName("c1");
+	 document.getElementById("c2").innerHTML = " " + x[1].innerHTML;
+</script>
+<br>
+
+<h2> 5. Changing the html content  </h2>
+
+
+<p id="p1">Pakistan</p>
+
+<script>
+document.getElementById("p1").innerHTML = "India";
+</script>
+
+<h2> 6. Changing the html style</h2>
+
+<p id="s1">Rajni</p>
+
+<script>
+document.getElementById("s1").style.color = "green";
+document.getElementById("s1").style.backgroundColor = "pink";
+document.getElementById("s1").style.border = "1px solid red";
+document.getElementById("s1").style.borderRadius = "10px";
+document.getElementById("s1").style.width = "200px";
+document.getElementById("s1").style.height = "70px";
+document.getElementById("s1").style.textAlign = "center";
+document.getElementById("s1").style.padding = "10px";
+</script>
+
+
+guhan
+
+<input id="i1" type="text" onmouseenter="myColor()"></input><br> <br>
+<input id="i2" type="text" ></input>
+<script>
+
+function myColor(){
+ 
+document.getElementById("i2").style.background= "pink";
+
+}
+</script>
+<br>
+<br>
+
+
+<input id="m1" type="text" onkeydown="myColor1()"></input><br> <br>
+<input id="m2" type="text" ></input>
+
+
+<script>
+function myColor1(){
+ 
+document.getElementById("m2").value=document.getElementById("m1").value;
+
+}
+</script>
+
+</body>
+</html>

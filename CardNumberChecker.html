@@ -1,0 +1,25 @@
+<html>
+<body>
+<input type="text" id="demo1"/> (34/37....to 15 Digits)</input><br>
+<br>
+<input type='submit' name="submit" onclick="checkNumber();"/>
+
+<script>
+
+function checkNumber() {
+    var num = document.getElementById("demo1");
+	var y= num.value;
+    var filter = /^(?:3[47][0-9]{13})$/;
+    //var filter = /^((?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%]).{6,20})$/;
+    if (!filter.test(y)) {
+    alert("Please check your 15 Digit Card Number");
+    return false;//https://regex101.com/
+ }
+}
+</script>
+
+<br>
+<br>
+
+</body>
+</html>

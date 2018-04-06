@@ -1,0 +1,20 @@
+<html>
+<body>
+<input type="text" id="demo1"/>
+<input type='submit' name="submit" onclick="checkEmail();"/>
+<script>
+function checkEmail() 
+    {
+    var email = document.getElementById("demo1");
+    var filter = /^([a-zA-Z0-9_])+\@([a-zA-Z])+\.([a-z])+$/;
+    if (!filter.test(email.value)) 
+	{
+    alert('Please check your email like payilagam34_124@gmail.com');
+    return false; 
+    }
+   }
+</script>
+<br>
+<br>
+</body>
+</html>

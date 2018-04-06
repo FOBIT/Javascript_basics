@@ -1,0 +1,37 @@
+<html>
+<body>
+Name:<span>*</span><input id="i1" onmouseover="Overme()"></input><br><br>
+Mobile:<span>*</span><input id="i2" onkeypress="keyPress()" onmouseout="mouseOut()"></input><br><br>
+<p id="p1"> </p>
+<script>
+         s=document.getElementsByTagName("span");
+         s[0].style.color="red";
+         s[1].style.color="blue";
+        function Overme()
+		{
+		   x= document.getElementById("i1").value;
+		   if(x=="")
+		   {
+		    document.getElementById("p1").innerHTML="Please Enter Your Name";
+		   }
+		   else
+		   {
+		   document.getElementById("p1").innerHTML="";
+		   }
+		}
+		
+		
+		function keyPress()
+		{
+		   
+		   document.getElementById("p1").innerHTML="You are entering your name";
+		   document.getElementById("s1").style.color="green";
+		}
+		
+		function mouseOut()
+		{
+		   document.getElementById("p1").innerHTML="Thank you!!";
+		}
+</script>
+</body>
+</html>
