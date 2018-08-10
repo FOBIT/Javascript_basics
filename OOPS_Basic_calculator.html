@@ -1,0 +1,54 @@
+<html>
+<head>
+   
+</head>
+
+<body>
+      <button onclick="check(arr[0])"> + </button>
+      <button onclick="check(arr[1])"> - </button>
+      <button onclick="check(arr[2])"> * </button>
+      <button onclick="check(arr[3])"> / </button>
+	  <p id="p1"> </p>
+
+	<script>
+	        m=20;
+			n=10;
+             function Student(x,y)
+			 {
+			    this.add=function()
+				{ 
+				  
+				   return x+y;
+				}
+				this.sub=function()
+				{ 
+				  
+				   return x-y;
+				}
+				this.mul=function()
+				{ 
+				  
+				   return x*y;
+				}
+				this.div=function()
+				{ 
+				  
+				   return x/y;
+				}
+				
+			 }
+			obj = new Student(m,n);
+            //document.write(obj.add());
+			arr = [obj.add(),obj.sub(),obj.mul(),obj.div()];
+			
+			function check(passingMethods)
+			{
+			   document.getElementById("p1").innerHTML=passingMethods;
+			}
+			
+			
+	</script>
+
+</body>
+
+</html>
