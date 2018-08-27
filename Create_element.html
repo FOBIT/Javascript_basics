@@ -1,0 +1,47 @@
+<html>
+<head>
+</head>
+
+<body>
+    Name:<input><br>
+	User:<input><br>
+	Pass:<input><br>
+	     <button onclick="check()">click</button>
+		 <br>
+		 <p> </p>
+		 <p> </p>
+		 <p> </p>
+		 <div id="d"></div>
+		 
+		 
+		 <script>
+		    function check()
+			{ 
+			  x=document.getElementsByTagName("input");
+			  y=document.getElementsByTagName("p");
+			 /*
+			  y[0].innerHTML=x[0].value;
+			  y[1].innerHTML=x[1].value;
+			  y[2].innerHTML=x[2].value;
+			  */
+			  for(i=0;i<=2;i++)
+			  {
+			    y[i].innerHTML=x[i].value;
+			  }
+			  
+			  
+			  for(i=0;i<=2;i++)
+			  {
+			    element = document.createElement("b");
+				text    = document.createTextNode(x[i].value);
+				append  = element.appendChild(text);
+				document.getElementById("d").appendChild(append);
+			  }
+			  
+			}
+			
+		 </script>
+
+</body>
+
+</html>
