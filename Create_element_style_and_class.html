@@ -1,0 +1,59 @@
+<html>
+<head>
+<style>
+      .mydiv{background-color:blue;}
+</style>
+</head>
+
+<body>
+    Name:<input id="i1"><br>
+	User:<input id="i2"><br>
+	Pass:<input id="i3"><br>
+	     <button onclick="check()">click</button>
+		 <br>
+		 <p id="p1"> </p>
+		 <p id="p2"> </p>
+		 <p id="p3"> </p>
+		 <div id="div" style="border:1px solid  blue; width:200px; height:200px;">
+		 
+		 </div> 
+		 
+		 <script>
+		    function check()
+			{ 
+			  x=document.getElementsByTagName("input");
+			  y=document.getElementsByTagName("p");
+			  
+			document.getElementById("p1").innerHTML=document.getElementById("i1").value;
+			document.getElementById("p2").innerHTML=document.getElementById("i2").value;
+			document.getElementById("p3").innerHTML=document.getElementById("i3").value;
+			 document.getElementById("p1").style.color="red";
+			 document.getElementById("div").className="mydiv";
+			 /*
+			  y[0].innerHTML=x[0].value;
+			  y[1].innerHTML=x[1].value;
+			  y[2].innerHTML=x[2].value;
+			  */
+			 
+			/* for(i=0;i<=x.length;i++)
+			  {
+			    y[i].innerHTML=x[i].value;
+			  }
+			 */
+			  
+			/*  
+			  for(i=0;i<=2;i++)
+			  {
+			    element = document.createElement("h2");
+				text    = document.createTextNode(x[i].value);
+				append  = element.appendChild(text);
+				document.getElementById("div").appendChild(append);
+			  }
+			  */
+			}
+			
+		 </script>
+
+</body>
+
+</html>
