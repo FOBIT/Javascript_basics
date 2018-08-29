@@ -4,7 +4,9 @@
 
 <img src="images/4.jpg" id="m1" width="200" height="200">
 
-<button onclick="forward()">click</button>
+<button onclick="forward()"><h3>></h3></button>
+
+<button onclick="backward()"><h3><</h3></button>
 
 <script>
 
@@ -24,6 +26,23 @@
 	    }
 		count=count+1;
    }
+   
+   function backward()
+   {
+		if(count<=x.length)
+		{
+		 
+		  if(count==-1)
+		  { 
+		   count=2;
+		  }
+		   document.getElementById("m1").src=x[count];
+		  
+	    }
+		count=count-1;
+   }
+   
+   
 </script>
 
 </body>
