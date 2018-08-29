@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<img src="images/4.jpg" id="m1" width="200" height="200">
+
+<button onclick="forward()">click</button>
+
+<script>
+
+   x=["images/1.jpg", "images/2.jpg","images/3.jpg"];
+   count=0;
+   function forward()
+   {
+		if(count<=x.length)
+		{
+		 
+		  if(count==x.length)
+		  { 
+		   count=0;
+		  }
+		   document.getElementById("m1").src=x[count];
+		  
+	    }
+		count=count+1;
+   }
+</script>
+
+</body>
+</html>
