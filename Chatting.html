@@ -2,7 +2,6 @@
 <style>
       div{width:250px; height:300px;float:left;border:1px solid blue;}
 	  p{color:blue;}
-
 </style>
 
 <body>
@@ -37,38 +36,32 @@
 function sender() 
 {        
          value=document.getElementById("i1").value;
-         createElement1 = document.createElement("p"); 
-         createElement2 = document.createElement("p"); 
-         createText1 = document.createTextNode(value); 
-         createText2 = document.createTextNode(value); 
-         createElement1.appendChild(createText1); 
-         createElement2.appendChild(createText2); 
-         document.getElementById("p1").appendChild(createElement1); 
-         document.getElementById("p2").appendChild(createElement2);
+         Element1 = document.createElement("p"); 
+         Element2 = document.createElement("p"); 
+         Text1 = document.createTextNode(value); 
+         Text2 = document.createTextNode(value); 
+         Element1.appendChild(Text1); 
+         Element2.appendChild(Text2); 
+         document.getElementById("p1").appendChild(Element1); 
+         document.getElementById("p2").appendChild(Element2);
          document.getElementById("i1").value="";		 
 }
-
 function mouse1()
 {
   document.getElementById("b2").innerHTML="Typing....";
   document.getElementById("b2").style.color="green";
   
 }
-
 function mouse1a()
 {
   document.getElementById("b2").innerHTML="";
 }
-
-
-
 function mouse2()
 {
   document.getElementById("b1").innerHTML="Typing....";
   document.getElementById("b1").style.color="green";
   
 }
-
 function mouse2a()
 {
   document.getElementById("b1").innerHTML="";
@@ -76,14 +69,14 @@ function mouse2a()
 function receiver() 
 {        
          value=document.getElementById("i2").value;
-         createElement1 = document.createElement("p"); 
-         createElement2 = document.createElement("p"); 
-         createText1 = document.createTextNode(value); 
-         createText2 = document.createTextNode(value); 
-         createElement1.appendChild(createText1); 
-         createElement2.appendChild(createText2); 
-         document.getElementById("p1").appendChild(createElement1); 
-         document.getElementById("p2").appendChild(createElement2);
+         Element1 = document.createElement("p"); 
+         Element2 = document.createElement("p"); 
+         Text1 = document.createTextNode(value); 
+         Text2 = document.createTextNode(value); 
+         Element1.appendChild(Text1); 
+         Element2.appendChild(Text2); 
+         document.getElementById("p1").appendChild(Element1); 
+         document.getElementById("p2").appendChild(Element2);
          document.getElementById("i2").value="";
 }
 </script>
