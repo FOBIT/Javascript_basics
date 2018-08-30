@@ -1,0 +1,17 @@
+<html> 
+<body>
+      <input id="i1"><br>
+      <button onclick="check()">send</button>
+	  <p id="p1"> <p>
+<script>
+        function check()
+		{
+		  value=document.getElementById("i1").value;
+		  element=document.createElement("p");
+		  text=document.createTextNode(value);
+		  element.appendChild(text);
+		  document.getElementById("p1").appendChild(element);
+	   }
+</script>
+</body> 
+</html>
