@@ -1,0 +1,186 @@
+<html>
+<head>
+<!--<script src="JavaScript\1.js"></script> -->
+</head>
+
+<body>
+<style>
+table{border:1px solid blue;border-collapse:collapse;}
+th,td{border:1px solid blue;}
+</style>
+<script>
+document.write("Nithya<br>");
+document.write("Sathya<br>");
+document.write("Nirmal"+"<br>");
+document.write("Sankar"+"<br>");
+
+document.write("<table>");
+document.write(" <tr><th>Firstname</th><th>Lastname</th> <th>Age</th></tr>");
+document.write("<tr><td>Jill</td><td>Smith</td> <td>50</td></tr>");
+document.write(" <tr><td>Eve</td><td>Jackson</td> <td>94</td></tr>");
+document.write("</table>");
+</script>
+
+<br><br>
+
+<h2> Operators</h2>
+
+
+<script>
+        var x=20; // x->variable, 20 -> value
+		    y=6;
+	     z1="Bala";//string
+		 z=x+y;
+		 z2=x-y;
+		 z3=x*y;
+		 z4=x/y;
+		 z5=x%y;
+		
+		document.write(z+"<br>"); // 26
+		document.write(z1+"<br>"); // Bala
+		document.write(z2+"<br>"); // 14
+		document.write(z3+"<br>"); // 120
+		document.write(z4+"<br>"); // 3.333
+		document.write(z5+"<br>"); // 2
+
+</script>
+         
+		 <h2> Conditional Operators</h2>
+<script>
+         x=10;
+		 y=5;
+		 if(x==y)
+		 {
+		 document.write("True");
+		 }
+		 else
+		 {
+		  document.write("False");
+		 }
+		 
+		 if(x<y)
+		 {
+		 document.write("True");
+		 }
+		 else
+		 {
+		  document.write("False");
+		 }
+		 if(x>y)
+		 {
+		 document.write("True");
+		 }
+		 else
+		 {
+		  document.write("False");
+		 }
+          x=10;
+		  y=5;
+		  z=5;
+		 if(x>y && y<z) // both should be true
+		 {
+		 document.write("True");
+		 }
+		 else
+		 {
+		 document.write("False");
+		 }
+		 
+		 if(x>y || y<z) // any one should be true or both
+		 { 
+		 document.write("True");
+		 }
+		 else
+		 {
+		 document.write("False");
+		 }
+		 
+		 
+</script>	
+
+
+<h2> For Loop</h2>
+
+
+<script>
+        //for(initial, condition, ++,--)
+		
+		for(i=1;i<=3;i++)
+		{    // i=1, i=2,
+		   for(j=0;j<=5;j++)//j=0; 0, j=1, 1, j=2, 2
+		   {
+		    document.write(j+"<br>");
+		   }
+		   document.write("<br>");
+		}
+</script>
+
+<h2> Increment and Decrement</h2>
+
+<script>
+        x=10;
+		//document.write(++x); // ++x (pre )
+		document.write(x++); // x++ (post), 
+		document.write(x);
+</script>
+
+<h2> Switch</h2>
+
+
+<script>
+         x=11;
+		 switch(x)
+		 {
+		   case 1: // if(x==1)
+		   document.write("A");
+		   break;
+		   case 3: // else if(x==3 || x==4 )
+		   document.write("B");
+		   break;
+		   case 8:
+		   document.write("C");
+		   break;
+		   case 10:
+		   document.write("D");
+		   break;
+		   default:  // else
+		   document.write("E");
+		   break;
+}
+
+</script>
+ 
+	<h2> While and Do While</h2>
+
+
+<script>
+        i=0;
+		while(i<=10)
+		{//i=0
+		 document.write(i+"<br>");
+		 i++;//1
+		}
+		for(i=0;i<=10;i++) // i=0, i=1
+		{
+		  while(i==5) // when
+		  {
+		    document.write("A"+"<br>");
+			break;
+		  }
+		  document.write(i+"<br>");
+		}
+        // i=1; i=2
+		
+		i=0;
+		do
+		{//i=0
+		 document.write(i+"<br>");
+		 i++;//1
+		}
+		while(i<=10)
+</script>	 
+		 
+		 
+</body>
+
+</html>
