@@ -1,0 +1,183 @@
+<html>
+<body>
+<h2> Array</h2>
+    <script>
+            var x = new Array(10,20,40,30);
+			document.write(x[0]);//10
+			document.write(x[2]);//40
+    </script>
+<h2> Simple Array</h2>
+
+    <script>
+            var x = [3,5,2,8,9,1,4,0];
+			document.write(x[1]);//5
+			document.write(x[5]);//1
+    </script>
+
+<h2> Array Length</h2>
+
+    <script>
+            var x = ["Gokul","Nithya","Muthu","Guhan"];
+			document.write(x.length);
+			
+    </script>
+	
+<h2> Array Sort</h2>
+
+    <script>
+            var x = ["Gokul","Nithya","Muthu","Guhan"];
+			document.write(x.sort());//Gokul,Guhan,Muthu,Nithya
+			
+    </script>
+<h2> Array Reverse</h2>
+
+    <script>
+            var x = ["Gokul","Nithya","Muthu","Guhan"];
+			document.write(x.reverse());//Guhan,Muthu,Nithya,Gokul
+			
+    </script>
+	
+<h2> Array Join</h2>
+
+    <script>
+            var x = ["Gokul","Nithya","Muthu","Guhan"];
+			var y=  ["Nanda","Baskar"];
+			document.write(x.join(y));//GokulNanda,BaskarNithyaNanda,BaskarMuthuNanda,BaskarGuhan
+			//document.write(x.join("."));//Gokul.Nithya.Muthu.Guhan
+	</script>
+<h2> Array concat</h2>
+
+    <script>
+            var x = ["Gokul","Nithya","Muthu","Guhan"];
+			var y=  ["Nanda","Baskar"];
+			document.write(x.concat(y));//Gokul,Nithya,Muthu,Guhan,Nanda,Baskar
+	</script>
+	
+	
+<h2> Array concat</h2>
+
+    <script>
+            var x = ["Gokul","Nithya","Muthu","Guhan"];
+			var y=  ["Nanda","Baskar"];
+			//document.write(x[2].concat(y[1]));
+			document.write(x[0].concat(x[1]));
+	</script>
+	
+	
+<h2> Array Push</h2>
+
+    <script>
+	          // Add element in last side
+			  
+            var x = ["Gokul","Nithya","Muthu","Guhan"];
+			document.write(x+"<br>");//Gokul,Nithya,Muthu,Guhan
+			var y =["Baskar","Ram"];
+			var z= x.push(y);
+			document.write(x);//Gokul,Nithya,Muthu,Guhan,Baskar,Ram
+	</script>
+	
+	<h2> Array Pop</h2>
+
+    <script>
+	         // Remove element in last side
+            var x = ["Gokul","Nithya","Muthu","Guhan"];
+			
+			document.write(x+"<br>");//Gokul,Nithya,Muthu,Guhan
+			
+			document.write(x.pop()+"<br>");// Guhan
+			
+			document.write(x+"<br>"); // array with removed element
+			
+	</script>
+	
+	
+	
+	<h2> Array shift</h2>
+
+    <script>
+	         // Remove element in fisrt side
+            var x = ["Gokul","Nithya","Muthu","Guhan"];
+			
+			document.write(x+"<br>");//Gokul,Nithya,Muthu,Guhan
+			
+			document.write(x.shift()+"<br>");
+			
+			document.write(x+"<br>"); // array with removed element
+			//Nithya,Muthu,Guhan
+	</script>
+	
+	
+	<h2> Array unshift</h2>
+
+    <script>
+	         // Add element in fisrt side
+            var x = ["Gokul","Nithya","Muthu","Guhan"];
+			
+			document.write(x+"<br>");//Gokul,Nithya,Muthu,Guhan
+			
+			document.write(x.unshift("Anbu")+"<br>");
+			
+			document.write(x+"<br>"); // array with removed element
+			//Anbu,Gokul,Nithya,Muthu,Guhan
+	</script>
+	
+	
+	
+	<h2> Array slice</h2>
+
+    <script>
+	         // Consider whole array of elements
+            var x = ["Gokul","Nithya","Muthu","Guhan"];
+			
+			document.write(x+"<br>");//Gokul,Nithya,Muthu,Guhan
+			
+			document.write(x.slice(1,3)+"<br>");//start from 1 before 3
+			
+			document.write(x+"<br>"); 
+	</script>
+	
+	<h2> Array splice</h2>
+
+    <script>
+	         // Consider whole array of elements
+            var x = ["Gokul","Nithya","Muthu","Guhan"];
+			
+			document.write(x+"<br>");//Gokul,Nithya,Muthu,Guhan
+			
+			document.write(x.splice(1,3)+"<br>");//start from 1 upto 3
+			
+			document.write(x+"<br>"); // array with removed element
+			//Anbu,Gokul,Nithya,Muthu,Guhan
+	</script>
+	
+	
+	<h2> Array splice</h2>
+
+    <script>
+	         
+            var x = ["Gokul","Nithya","Muthu","Guhan"];
+			var y=x.splice(1,2,"Kannan","Anbu");
+			document.write(x);
+	</script>
+	
+	
+	<h2> Reverse</h2>
+	
+	
+	<script>
+	       var x = ["Anbu","Pradeep","Gokul","Nithya","Muthu","Guhan"];
+		   
+	        // pradeep, Nithya, Muthu, Gokul, Guhan, Anbu
+			
+			var a= x.sort(); // Anbu, Guhan, Gokul, Muthu, Nithya, Pradeep
+			var y = a.length;
+			for(i=y-1; i>=0; i--)
+			{
+			 document.write(x[i]+"<br>");
+			}
+			
+</script>
+
+</body>
+
+</html>
