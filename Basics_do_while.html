@@ -1,0 +1,33 @@
+<html>
+<style>
+    h2{color:red;}
+    span{color:blue;}
+</style>    
+<body>
+     <h2> Do While in JavaScript</h2>		
+ <span>Start value</span>:<input id="start"> <br>
+ <span>End   value</span>:<input id="end">   <br>
+            <button onclick="check()">click</button>
+			
+			<script>
+			       function  check()
+				   {
+					 start=document.getElementById("start").value;
+					 end  =document.getElementById("end").value;
+					
+					// Change Datatype
+					start=parseInt(start);
+					end  =parseInt(end);
+					temp=start;
+				    do
+					{
+					 console.log(temp);
+					 temp++;
+					}
+					while(temp<=5)
+				  }
+			
+			</script>
+</body>
+
+</html>
