@@ -1,0 +1,45 @@
+<html>
+<style>
+    h2{color:red;}
+</style>    
+<body onload="AutoRefresh(1000)">
+     <h2> Switch Case</h2>		
+     <p id="data"> </p>
+<script>
+	
+	x = [ "guha", "bharath", "anbu", "ram", "Thursday", "ravi", "Rogit",
+		"Ramana","Kathir","Kumar","Kesav","Rjk","Jkn","KLM" ];
+				   
+	d=new Date()
+	y = d.getSeconds(); 
+	var  z;
+				switch(y)
+				{
+				 case 0: z= x[0]; break;
+				 case 1: z= x[1]; break;
+				 case 2: z= x[2]; break;
+				 case 3: z= x[3]; break;
+				 case 4: z= x[4]; break;
+				 case 5: z= x[5]; break;
+				 case 6: z= x[6]; break;
+				 case 7: z= x[7]; break;
+				 case 8: z= x[8]; break;
+				 case 9: z= x[9]; break;
+				 case 10: z= x[10]; break;
+				 case 11: z= x[11]; break;
+				 case 12: z= x[12]; break;
+				 case 13: z= x[13]; break;
+				 case 14: z= x[14]; break;
+				 default: z="Wait for 36 seconds";
+				}
+			document.write(z);
+      		document.getElementById("data").innerHTML=z;	
+      
+	   function AutoRefresh(t) {
+          setTimeout("location.reload(true);", t);
+        }			
+			
+</script>
+</body>
+
+</html>
