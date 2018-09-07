@@ -1,0 +1,77 @@
+<html>
+<head>
+   
+   <style>
+      *{box-sizing:border-box;}
+.container{width:60%;height:300px;border:0px solid blue;}
+.box{width:33.3%;height:300px;border:1px solid blue;float:left;}
+
+
+
+input{width:70%;height:40px;color:red;font-size:18px;}
+h2{color:blue;font-size:30px;}
+button{width:28%;height:40px;font-size:24px;
+background-color:#00AD10;color:white;}
+
+li{list-style-type:none;
+ font-size:22px;font-weight:bold;}
+
+   
+   </style>
+   </head>
+<body>
+     <h2>JavaScript Date</h2>
+	
+	<div class="container">
+	 
+	 <div class="box" style="background-color:#FCF78F;"> 
+	     <h2> Person A </h2>
+	     <img src="JavaScript\img1.PNG" width="100%">
+		 <input id="i1">
+	     <button onclick="sendsms()">send</button>
+		 
+	 </div>
+	 <div class="box" id="mydiv" style="padding-left:10px;padding-top:1px;
+	 "> 
+	          
+	 
+	 </div>
+	 <div class="box" style="background-color:#FC8FF2;"> 
+		  <h2 style="color:red;"> Person B </h2>
+		  <img src="JavaScript\img2.PNG" width="100%" height="170px;">
+		  <input id="i2">
+		  <button onclick="sendsms()">send</button>
+	 </div>
+	
+	</div>
+	
+	 
+	 
+	 <script>
+	     function sendsms()
+        {        
+         value1=document.getElementById("i1").value;
+         value2=document.getElementById("i2").value;
+		 Element = document.createElement("li");
+		 if(value1!="")
+		 {
+               Text = document.createTextNode(value1); 
+               Element.appendChild(Text); 
+               document.getElementById("mydiv").appendChild(Element);
+               Element.style.color="blue";
+               document.getElementById("i1").value="";		 
+         }
+		 else if(value2!="")
+		 {
+               Text = document.createTextNode(value2); 
+               Element.appendChild(Text); 
+               document.getElementById("mydiv").appendChild(Element);
+               Element.style.color="red";
+               document.getElementById("i2").value="";		 
+         }
+		 
+	    }
+	 </script>
+              
+</body>
+</html>
