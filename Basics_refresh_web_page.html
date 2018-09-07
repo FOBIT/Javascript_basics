@@ -10,15 +10,19 @@
 	 
 	<script>	 
 		 function Refresh() 
-		 {     		 
+		 {     //1000 ms = 1 s		 
 		       time=document.getElementById("i1").value;
-		       time=parseInt(time);
-			   setTimeout("location.reload(true)", time);
+			   time=parseInt(time)*1000;
+		       setTimeout("location.reload(true)", time);
 			   if(setTimeout("location.reload(true)", time))
 			   {
 			     document.getElementById("h2").style.color="red";
+				 
 			   }
+			   
 		 }			
+		 
+		 console.log(window.location.href);
 				
 	</script>
 </body>
