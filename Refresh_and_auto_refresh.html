@@ -1,0 +1,31 @@
+<html>
+<style>
+    h2{color:blue;}
+</style>    
+<body id="b1">
+     <h2> Refresh the web page</h2>	
+	 
+	 <input id="i1"><br>
+	 <button onclick="Refresh()">click</button>
+	 
+	<script>	 
+		 function Refresh() 
+		 {     
+                    //time=document.getElementById("i1").value;
+			       time=3;
+				   time=parseInt(time)*1000;
+				   expire=setTimeout("location.reload(true)", time);
+				   if(expire)
+				   {
+					 document.getElementById("b1").style.backgroundColor="red";
+				   }
+				   
+			  
+		 }			
+		 
+		 console.log(window.location.href);
+		 setInterval(Refresh,3000);
+				
+	</script>
+</body>
+</html>
