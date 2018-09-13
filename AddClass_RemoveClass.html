@@ -1,0 +1,72 @@
+<html>
+<style>
+body{background-color:#E9F9B5;}
+input{background-color:#EAFAF1;color:blue;
+      width:100%;height:35px;font-size:23px;}
+p{padding:6px;color:red;font-size:22px;}
+h1{color:#030DE6;}
+table{border: 0px solid blue;border-collapse:collapse;
+      }
+td{
+border:0px solid blue; width:250;height:70;
+text-align:center;font-size:30px;
+background-color:#cbb9b1;color:blue;
+text-align:left;padding:10px;
+}
+.show{border:1px solid green;width:180px;font-size:18px;
+     height:30px; background-color:#DEE0FE;}
+span{color:red;font-size:30px;}
+</style>
+<body>
+    <h1> ADD CLASS AND REMOVE CLASS IN JAVASCRIPT </h1>
+<table>
+      <tr> 
+	  <td>   Name: <span>**</span> </td>
+	  <td><input onmouseover="onMouseover(0)" onmouseout="onMouseout(0)" 
+				 /> </td>
+	  <td>  <p> </p> </td>
+	  </tr>
+	  <tr> 
+	  <td>   Father:  </td>
+	  <td><input onmouseover="onMouseover(1)" onmouseout="onMouseout(1)" 
+	             /> </td>
+	  <td>  <p> </p> </td>
+	  </tr>
+	  
+	  <tr> 
+	  <td>   Mother:  </td>
+	  <td><input onmouseover="onMouseover(2)" onmouseout="onMouseout(2)" 
+				 /> </td>
+	  <td>  <p> </p> </td>
+	  </tr>
+	  
+	  <tr> 
+	  <td>   Mobile: <span>**</span>  </td>
+	  <td><input onmouseover="onMouseover(3)" onmouseout="onMouseout(3)" 
+	                /> </td>
+	  <td>  <p> </p> </td>
+	  </tr>
+	  
+</table>
+
+<script>
+x=document.getElementsByTagName("input");
+y=document.getElementsByTagName("p");
+z=document.getElementsByTagName("span");
+
+function onMouseover(i) {
+   
+     if(x[i].value==""){
+         y[i].innerHTML="Please fill this field!!";
+		 y[i].className="show";
+	 }
+}
+
+function onMouseout(i) {
+
+          y[i].classList.remove("show");
+		  y[i].innerHTML="";
+}
+</script>
+</body>
+</html>
