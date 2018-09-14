@@ -1,0 +1,80 @@
+<html>
+<style>
+body{background-color:#F2F597;}
+input{background-color:#EAFAF1;color:blue;
+      width:100%;height:35px;font-size:23px;}
+input[type="submit"]{background-color:blue;color:white;}
+p{padding:6px;color:red;font-size:22px;}
+h1{color:#030DE6;text-align:center;}
+table{border: 0px solid blue;border-collapse:collapse;
+      outline:10px outset #818680;
+	  }
+td{
+border:0px solid blue; width:250;height:70;
+text-align:center;font-size:30px;
+background-color:#cbb9b1;color:blue;
+text-align:left;padding:10px;
+} 
+span{color:red;font-size:16px;}
+</style>
+<body>
+    <h1> JAVASCRIPT FORM VALIDATION USING REGULAR EXPRESSION</h1>
+<form action="image.html" onsubmit="return check()" autocomplete="off">
+<table align="center">
+      <tr> 
+	  <td>   Name:<span> Alphabets only allowed!!</span> </td>
+	  <td><input id="name"/> </td>
+	  </tr>
+	  <tr> 
+	  <td>   Mobile: <span>  10 digit number!!</span> </td>
+	  <td><input id="mobile"/> </td>
+	  </tr>
+	  
+	  <tr> 
+	  <td>   Email: <span>Use correct format!!</span> </td>
+	  <td><input  id="email"/> </td>
+	  </tr>
+	  
+	  <tr> 
+	  <td>   Password:<span>Use one small,caps,number,special chars </span>  </td>
+	  <td><input id="pass"/> </td>
+	  </tr>
+	  <tr> 
+	  <td colspan="2"><input type="submit" value="signup"/> </td>
+	  </tr>
+</table>
+</form>
+<script>
+       function check()
+       {
+	     x=document.getElementsByTagName("input");
+		 
+		 alpha=/^[A-Za-z]+$/;
+		 number=/^([0-9]{10})+$/;
+		 id=/^([A-Za-z0-9_.])+\@([a-z])+\.([a-z])+$/;
+		 p=/^((?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[@#$%^&*!]).{5,})+$/;
+		
+		 if(!alpha.test(x[0].value))
+		 {
+		  alert("Use only alphabets in name");
+		  return false;
+		 }
+		 else if(!number.test(x[1].value))
+		 {
+		  alert("Use only 10 digit mobile number");
+		  return false;
+		 }
+		 else if(!id.test(x[2].value))
+		 {
+		  alert("Use correct email");
+		  return false;
+		 }
+		 else if(!p.test(x[3].value))
+		 {
+		  alert("Use correct pass");
+		  return false;
+		 }
+	   }	   
+</script>
+</body>
+</html>
